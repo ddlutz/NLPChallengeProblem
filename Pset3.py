@@ -8,8 +8,10 @@ Created on Wed Sep 24 22:40:23 2014
 import nltk.data
 import sys
 import random
-
-features = []
+from sklearn import svm
+from sklearn import datasets
+from sklearn.feature_extraction import DictVectorizer
+import numpy as np
 
 def buildVocab(data):
     vocab = []
@@ -37,12 +39,23 @@ def loadFiles():
 
     return data
 
+def fixWord(word):
+    newWord = ""
+    for letter in word:
+        if str.isalpha(letter) or str.isdigit(letter):
+            newWord += letter
+
+    return newWord
+
+
 def getEMFeatures(vocab, textRow):
     features = {}
     textRow = textRow.split(' ')
     features['FirstWord'] = textRow[0]
     numSl = 0
     numSp = 0
+
+    fixedTextRow = [fixWord(word) for word in textRow]
     for word in textRow:
         if word == '{sl}':
             numSl += 1
@@ -50,7 +63,8 @@ def getEMFeatures(vocab, textRow):
             numSp += 1
 
     for word in vocab:
-        if word in textRow:
+        fixedWord = fixWord(word)
+        if word in fixedTextRow:
             features['Vocab-' + word ] = True
         else:
             features['Vocab-' + word ] = False
@@ -70,6 +84,10 @@ def splitData(data):
     random.shuffle(data)
 
     return (data[:numTrain], data[numTrain:])
+
+def getSVMFeatures(data):
+    data = []
+
 def main():
     
     """
@@ -82,18 +100,49 @@ def main():
     data = loadFiles()
     vocab = buildVocab(data)
 
+    vocab = [fixWord(word) for word in vocab]
+
     data = [r for r in data if len(r) > 1]
 
     labeledData = [(getEMFeatures(vocab, row[5]), row[3]) for row in data]
 
     trainset, testset = splitData(labeledData)
-
-
     
     classifier = nltk.NaiveBayesClassifier.train(trainset)
 
-    print "Train accuracy: " + str(nltk.classify.accuracy(classifier, trainset))
-    print "Test accuracy: " + str(nltk.classify.accuracy(classifier, testset))
+    svmData = [getEMFeatures(vocab, row[5]) for row in data]
+    svmAnswers = [row[3] for row in data]
+
+    svmClass = svm.SVC(kernel = 'rbf', gamma=0.001, C=100)
+
+    vec = DictVectorizer()
+    svmData = vec.fit_transform(svmData).toarray()
+
+    svmArrayAnswers = []
+    for i in svmAnswers:
+        if i == 'A' or i == 'E':
+            svmArrayAnswers.append(0)
+        else:
+            svmArrayAnswers.append(1)
+
+    svmTrainData = svmData[:330]
+    svmTrainAnswers = svmArrayAnswers[:330]
+    svmTestData = svmData[330:]
+    svmTestAnswers = svmArrayAnswers[330:]
+
+    svmClass.fit(svmTrainData, svmTrainAnswers)
+
+    trainPredict = svmClass.predict(svmTrainData)
+    svmTrainAccuracy = np.mean(trainPredict == svmTrainAnswers)
+
+    predicted = svmClass.predict(svmTestData)
+    svmAccuracy = np.mean(predicted == svmTestAnswers)
+
+    print "SVM Train accuracy: " + str(svmTrainAccuracy)
+    print "SVM Test accuracy: " + str(svmAccuracy)
+
+    print "NB Train accuracy: " + str(nltk.classify.accuracy(classifier, trainset))
+    print "NB Test accuracy: " + str(nltk.classify.accuracy(classifier, testset))
 
     
 if __name__ == "__main__":
