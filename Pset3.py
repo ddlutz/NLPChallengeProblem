@@ -104,16 +104,18 @@ def main():
 
     data = [r for r in data if len(r) > 1]
 
-    labeledData = [(getEMFeatures(vocab, row[5]), row[3]) for row in data]
+    random.shuffle(data)
+
+    labeledData = [(getEMFeatures(vocab, row[5]), row[4]) for row in data]
 
     trainset, testset = splitData(labeledData)
     
     classifier = nltk.NaiveBayesClassifier.train(trainset)
 
     svmData = [getEMFeatures(vocab, row[5]) for row in data]
-    svmAnswers = [row[3] for row in data]
+    svmAnswers = [row[4] for row in data]
 
-    svmClass = svm.SVC(kernel = 'rbf', gamma=0.001, C=100)
+    svmClass = svm.SVC(kernel = 'rbf', gamma=0.0005, C = 600)
 
     vec = DictVectorizer()
     svmData = vec.fit_transform(svmData).toarray()
