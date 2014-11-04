@@ -1,0 +1,441 @@
+AS2,n1,q1,Q,E,how long has the unexpected visitor been away
+AS2,n1,q1,A,E,i'm kinda thinking sp years
+AS2,n1,q2,Q,M,how rich is sp the family {sl} <uh sp sorry could you repeat that> sp sure how rich is sp the family
+AS2,n1,q2,A,M,hm {sl} hm they don't really sp look rich
+AS2,n1,q3,Q,M,what season is it
+AS2,n1,q3,A,M,hm {sl} uh think maybe winter
+AS2,n1,q4,Q,E,and how do the children feel about the visitor
+AS2,n1,q4,A,E,hm {sl} they seem kind of sp like shocked maybe like sp maybe nervous
+AS3,n1,q1,Q,E,how long has the unexpected visitor been away
+AS3,n1,q1,A,E,sp i'm probably going to assume sp on my sp uh basis of assumption sp probably like a good sp two to five days
+AS3,n1,q2,Q,M,[how] rich is sp the family 
+AS3,n1,q2,A,M,sp they look middle class i mean i'd probably sp probably like a sp standard english sp uh family i mean sp i mean we're not talking about the sp like queen elizabeth sp rich but you know just middle class sp probably like you know sp {br} sp late nineteenth century early twentieth century
+AS3,n1,q3,Q,M,what season sp is sp it
+AS3,n1,q3,A,M,it looks as if it's uh late sp uh sp late summer early autumn sp like sometime in september
+AS3,n1,q4,Q,E,and how do the children feel about the visitor
+AS3,n1,q4,A,E,sp um they're a little bit befuddled because they think that this visitor is sp a either a complete stranger or sp b {br} sp just sp negligent sp to their existence so sp at which sp at which point one could assume that the man walking in is {br} sp perhaps their father or their uncle or somehow related
+TD1,n1,q1,Q,E,how long has the unexpected visitor been away
+TD1,n1,q1,A,E,um {sl} probably a long time {sl} uh sp based on how everyone's responding sp they didn't expect to see that person again yeah i guess that's it
+TD1,n1,q2,Q,M,how rich is sp the family
+TD1,n1,q2,A,M,sp um sp i'm guessing that this is sp an older picture so i sp assume they must be {sl} pretty wealthy sp based on the fact that sp they all seem to have nice clothes sp um sp the sp person that seems to have the worst clothes is the person that's coming in who sp i'm assuming is the sp unexpected guest or sp visitor sp and sp even he seems to be sp i'm not sure if he's wearing fur or some other {sl} less sp nice clothes but he seems to be dressed pretty nicely too sp so
+TD1,n1,q3,Q,M,what sp season is it
+TD1,n1,q3,A,M,i'd guess either spring or summer based on {sl} everyone's sp actually sp probably either spring or fall based on everyone's clothing it's too {sl} looks like it's too warm to be sp summer clothing and too cold to be winter clothing {sl} so some sp in between session
+TD1,n1,q4,Q,E,how do the children feel about the visitor
+TD1,n1,q4,A,E,sp um sp i'm guessing the daughter felt sp slightly scared or {sl} um sp anxious maybe she didn't know that person was or she had bad experiences with that person sp the sp the son on the far right seems very happy to see him sp like it was his father who he hasn't seen in a long time sp {sl} sp and {sl} i'm not sure if that sp person in the middle is a sp child or sp an adult but they seem to be reacting with a sp little bit of fear or surprise to the person {br} so yeah
+TD2,n1,q1,Q,E,how long has the unexpected visitor been away
+TD2,n1,q1,A,E,sp um {sl} couple months
+TD2,n1,q2,Q,M,[how] rich is sp the family
+TD2,n1,q2,A,M,sp um i'd say they're middle class um sp they don't seem sp too sp wealthy sp although i can't really tell who that sp that sp person is close uh closest to us it sp might seems almost like it's a maid or something so that would imply sp higher class but everything around other- otherwise sp seems to imply sp middle class
+TD2,n1,q3,Q,M,what season is it
+TD2,n1,q3,A,M,sp um judging by the clothes that sp the uh sp the new sp new arrival has on um sp it must be sp late fall or winter
+TD2,n1,q4,Q,E,how do the children feel about the visitor 
+TD2,n1,q4,A,E,sp um sp uh one of them the sp little girl over to the right seems kind of scared um sp the uh or at least nervous sp and then the the sp the boy all the way to the right seems excited sp um and sp then the one in the middle it seems is just kind of curious sp um so i'd say they all really have different reactions to it
+TD3,n1,q1,Q,E,how long has the unexpected visitor been away
+TD3,n1,q1,A,E,{sl} um {sl} it seems like a fair amount of time sp um sp the older kid on the right seems to be excited he's here or at least recognize him sp the the girl next to him doesn't seem to sp um sp recognize him or be confused at least sp uh who he is or why he's here and everyone else is kind of sp blown away like what's he doing here {sl} that's the impression i get
+TD3,n1,q2,Q,M,how rich is sp the family
+TD3,n1,q2,A,M,sp fairly wealthy they have sp they have servants for one thing sp {lg} sp um sp everyone seems to be dressed up sp in {sl} sp um sp proper attire
+TD3,n1,q3,Q,M,what season is it
+TD3,n1,q3,A,M,hm it's sp still light outside sp um {sl} but it's not sp it doesn't seem like everyone's sp in sp thick sp thick thick jackets so maybe late fall
+TD3,n1,q4,Q,E,and how do the children feel about the visitor
+TD3,n1,q4,A,E,sp um well like i said the boy on the right is sp really sp uh is excited that he's here or excited that the visitor's here sp uh the girl not so much
+AS2,n2,q1,Q,E,is the doctor giving good news or bad news
+AS2,n2,q1,A,E,hm think sp bad news
+AS2,n2,q2,Q,E,how do the two people on the right feel
+AS2,n2,q2,A,E,uh they seem like {sl} like they're sp concerned sp mm but they sp can get through it
+AS2,n2,q3,Q,M,what is the profession of the man on the left
+AS2,n2,q3,A,M,um i mean {sl} i mean i'm sure he's a sp doctor i don't i don't know what kind specifically {sl} but
+AS2,n2,q4,Q,M,and where is this conversation taking place
+AS2,n2,q4,A,M,hm {sl} hm {sl} uh {sl} kind of looks like an office
+AS3,n2,q1,Q,E,is the doctor giving good news or bad news sp
+AS3,n2,q1,A,E,sp i mean it really it sp really depends on the circumstance although one one could sp uh sp one could assume that it's sp bad news sp {br} sp because in general that's why you go to a doctor to hear such stuff sp however sp such could be the case in which sp the doctor is uh {sl} is uh sp saying that there's really no {sl} sp uh sp symptom sp no uh severe symptoms that could be life threatening sp for the patient so {sl} unless we know the actual sp situation sp there is really no {sl} sp uh sp determinant answer for this
+AS3,n2,q2,Q,E,how do the two people on the right sp feel
+AS3,n2,q2,A,E,sp {br} sp uh again same as question sp number one for this image it's really all dependent sp on sp on the sp circumstance so sp depending on what the doctor has told them based upon sp the diagnosis of the man sp um {sl} in the purple shirt sp uh sp it really i mean they could be a little sp i mean sp but judging solely by this photo it could sp be as if they were nervous to figure out sp and learn about the results as to sp who it is that has the illness that the doctor's trying to pinpoint for
+AS3,n2,q3,Q,M,what is the profession of sp the man on the left
+AS3,n2,q3,A,M,sp {sl} sp oh sp i one could safely assume he's an m d sp medical doctor
+AS3,n2,q4,Q,M,and where is this sp conversation taking sp place
+AS3,n2,q4,A,M,sp i believe it is sp it is in the doctor's office or sp as sp as sp there's a round table sp because a doctor might not have that much space sp it could be in their sp it could be in a sp private sp like sp equivalent to like what a private function room might sp be in a sp large corporate business but this is just like a sp sort of a sp coffee room per se for sp uh sp medical doctors
+TD1,n2,q1,Q,E,is sp the doctor giving good news or bad news
+TD1,n2,q1,A,E,uh sp probably bad news based on sp uh how the er sp how the couple is sp reacting sp um sp it looks like sp she's holding his hand {sl} and {sl} she seems more worried about him he seems more worried about the news sp so i'm guessing he's getting bad news
+TD1,n2,q2,Q,E,[how] do the two people on the right feel
+TD1,n2,q2,A,E,sp um sp either scared or anxious sp they're sp probably getting some news that's sp very sp very devastating to them and they're sp not quite sure how to take it
+TD1,n2,q3,Q,M,what is the profession of the man on the left
+TD1,n2,q3,A,M,sp um {sl} some kind of doctor sp probably uh based on the x ray that he looks like he's holding i would sp i'd guess some kind of spine doctor but i'm not really sp too sure {sl} but some respected doctor i'd assume
+TD1,n2,q4,Q,M,where is this conversation taking place
+TD1,n2,q4,A,M,sp um sp inside of an office sp probably in {sl} sp uh not in a waiting room sp not in one of the {sl} uh sp like check up rooms but in {sl} sp some third kind of sp briefing sp or sp office room sp for the doctors
+TD2,n2,q1,Q,E,is the doctor giving good news or bad news
+TD2,n2,q1,A,E,um {sl} i don't know if the news has been given yet sp it seems as if the uh sp the patients don't have uh sp a uh sp a telling sp telling uh facial expression yet sp it seems like they're sp still waiting for the response it seems like sp the doctor just pulled out sp the uh sp x rays er whatever whatever that is sp and they're about to get the news
+TD2,n2,q2,Q,E,how do the two people on the right sp feel
+TD2,n2,q2,A,E,sp um sp i think they're concerned sp um sp they're sp i think i think the results sp there's a lot that rides on on on uh sp the results of sp of whatever tests have been taking sp or whatever whatever uh sp um {sl} the doctor's opinion is on the matter sp um sp so i think they're sp they're sp just anxious to get the news
+TD2,n2,q3,Q,M,what is the profession of the man on the left
+TD2,n2,q3,A,M,sp um {sl} well he's obviously some type of doctor sp um sp {br} sp uh i sp if sp if that's an x ray like it looks like then he could be sp specifically that type of doctor sp that that sp uh specializes in x rays um he could sp he could just be a primary sp primary care doctor it's it's hard to tell
+TD2,n2,q4,Q,M,[where] is this conversation taking place 
+TD2,n2,q4,A,M,sp um it sp looks to be some some uh sp meeting room sp inside a inside a hospital it's obviously not a sp not a hospital room you know where where there would be sp um sp beds and and medical equipment and stuff but sp it seems to be just a place where um sp where people can meet
+TD3,n2,q1,Q,E,is the doctor giving good news or bad news
+TD3,n2,q1,A,E,um {sl} doesn't seem like good news sp {lg} sp um i'd probably say sp um sp less than opportune news
+TD3,n2,q2,Q,E,how do the two people on the right feel
+TD3,n2,q2,A,E,um sp apprehensive sp um sp concerned sp {sl} i'd say concerned moreso
+TD3,n2,q3,Q,M,what is the profession of the man on the left sp
+TD3,n2,q3,A,M,i'd like to skip the question
+TD3,n2,q4,Q,M,and where is this conversation taking place
+TD3,n2,q4,A,M,um {sl} in sp an office or a waiting area not really a um {sl} not not a um {sl} a an office sp a doctor's office sp or um god i'm not sure how to describe {sl} a sort sp of a side room where they can have these sorts of discussions about test results
+AS2,n3,q1,Q,M,what might this person be trying to do
+AS2,n3,q1,A,M,hm {sl} hm i see a lot of like sp papers and think sp maybe he's sp like trying sp to print stuff
+AS2,n3,q2,Q,E,why is sp this person frustrated
+AS2,n3,q2,A,E,um {sl} um {sl} uh the {sl} the computer sp something is obviously sp not working right
+AS2,n3,q3,Q,M,what equipment is he using
+AS2,n3,q3,A,M,hm {sl} hm {sl} besides the computer i sp i can't really tell
+AS2,n3,q4,Q,E,what will he do next
+AS2,n3,q4,A,E,hm {sl} um {sl} he looks about ready to break something
+AS3,n3,q1,Q,M,what might this person be trying to do
+AS3,n3,q1,A,M,sp {ns} sp huh talking to a cs major sp perhaps debugging code sp um {sl} sp something i've gotta face with later {lg} sp on sp a side tangent sp or sp {br} {sl} sp looks as if that person is male so i'll i'll go on that uh sp good faith assumption sp he could be uh {sl} uh sp his his uh sp his computer might have crashed his operating system might have crashed sp um sp he could right now be facing with a long period of that sp notable sp blue screen of sp death sp either on xbox systems or other microsoft windows systems or {br} sp any microsoft systems sp for that matter
+AS3,n3,q2,Q,E,why is this person frustrated
+AS3,n3,q2,A,E,sp uh sp as i said earlier before it could be for sp a buggy program the blue screen of sp death sp uh you know sp or sp judging by the note cards he could be having so many emails being sent to him so much spam sp so many uh sp people trying to lure him sp to do something that he's so intimidated by that he's just freaking out and there's nothing else he can do
+AS3,n3,q3,Q,M,what equipment is sp he using
+AS3,n3,q3,A,M,sp uh it looks as if i mean sp uh on sp a sp machinery point of view it looks as if he has a monitor sp he has a main computer base sp uh sp a uh sp regular computer sp and a fax machine sp and it looks as if he also has um sp other uh sp paper documents as well as uh sp binders and books to organize sp um sp paper documents
+AS3,n3,q4,Q,E,and what will he do next
+AS3,n3,q4,A,E,{sl} uh sp if he's sane sp he'll probably just uh sp you know uh {sl} sp try to find a way to cool off sp go to a break room if his boss allows it or if his boss is going to go pissy at him sp he'll just probably uh you know uh some other standard technique that's uh {sl} you know sp common to cool some person down sp if he's an insane person he'll probably sp i don't know sp go on a rampage outside of his office that'll probably sp cause him you know sp to be pulled over by sp um sp the authorities and he'll probably be get sent to prison if he's sp really insane
+TD1,n3,q1,Q,M,what might this sp person be trying to do
+TD1,n3,q1,A,M,um sp i'm guessing they're trying to print something out sp and the printer is doing {sl} everything but what they wanted it to do it looks like their sp printer is shooting out lots of papers and sp they seem to be angry about that sp mm {sl} either that or they're trying to fax something i'm not sure {sl} but i'd guess printing
+TD1,n3,q2,Q,E,[why] is this person frustrated
+TD1,n3,q2,A,E,sp um sp they can't get their sp either printer or computer or some technology to work the way they want it to sp and sp as we all know that's sp always frustrating
+TD1,n3,q3,Q,M,what equipment is he using
+TD1,n3,q3,A,M,sp um sp it looks like he's using a computer sp with a printer hooked up to it {sl} uh sp to the left of the computer it looks like there's sp a {sl} a sp binder or some notebook sp and {sl} sp i can't tell what's in the background but it sp looks like a sp backpack maybe sp {br} sp mostly just a computer and a printer sp is sp what he's using though
+TD1,n3,q4,Q,E,and what will he do next
+TD1,n3,q4,A,E,hm {sl} probably sp either get fired or sp quit from whichever job he's working at right now sp {sl} sp based on sp how he seems to sp be snapping and sp about to go insane
+TD2,n3,q1,Q,M,what might this person be trying to do
+TD2,n3,q1,A,M,sp um {sl} he could be sp trying sp to sp um sp solve a problem with his computer sp um looks like maybe there's something wrong with it based on it sp looks almost like smoke is coming out of the computer and so i think he's frustrated that it's not working properly and sp he doesn't know how to fix it sp either that or sp maybe he's sp he's i mean he's sweating um sp but sp he's also red with anger so maybe he's he's sp nervous about not getting something done you know his maybe his computer sp is is not working well sp uh in the midst of him trying to finish some type of sp assignment or meet a deadline
+TD2,n3,q2,Q,E,why is this person frustrated
+TD2,n3,q2,A,E,sp um sp because the computer isn't working
+TD2,n3,q3,Q,M,[what] equipment is he using
+TD2,n3,q3,A,M,sp uh he's using a computer and what looks to be a printer or uh is that a fax machine sp yeah it looks to be like a sp fax machine and a computer
+TD2,n3,q4,Q,E,and what will he do next
+TD2,n3,q4,A,E,sp um sp he might sp punch the computer sp i would believe it {lg}
+TD3,n3,q1,Q,M,what might this person be trying to do
+TD3,n3,q1,A,M,um {sl} it would sp seem to be use his fax machine sp ha {sl} and it's overwhelming sp or frustrating
+TD3,n3,q2,Q,E,why is this person frustrated
+TD3,n3,q2,A,E,cause his sp fax machine's sp making too many copies of something
+TD3,n3,q3,Q,M,what equipment is he using
+TD3,n3,q3,A,M,he's using sp computer with a c r t monitor so i'd say this image is from the sp mid to late nineties sp maybe the early two thousands sp he has a fax machine so that kinda dates it even further {sl} um and {sl} that's gotta be a modem on the side {sl} not sure
+TD3,n3,q4,Q,E,and what will he do next
+TD3,n3,q4,A,E,sp well he probably won't have his hair for very long sp um not sure what he's gonna do next
+AS2,n4,q1,Q,E,why is this picture funny
+AS2,n4,q1,A,E,um {sl} sp like like the sp tic sp tac sp toe board's supposed to be like sp uh sp crop circles
+AS2,n4,q2,Q,M,what does the crop circle look like
+AS2,n4,q2,A,M,well {sl} i mean i kind of just answered that uh sp tic tac toe
+AS2,n4,q3,Q,M,where are the two green men from
+AS2,n4,q3,A,M,i mean they're they're aliens {sl} so sp {sl} yeah
+AS2,n4,q4,Q,E,and why is the man on the left pointing and smiling
+AS2,n4,q4,A,E,hm {sl} um just sp i'm guessing he's sp he's sp the one who sp got the sp three in a row
+AS3,n4,q1,Q,E,why is this sp picture funny
+AS3,n4,q1,A,E,sp because it shows sp uh {sl} i mean it's sp sp it's really hard to determine but one could say that sp there could be a multitude of answers one could be because it's sp it depicts aliens sp who have somehow sp {br} sp uh {sl} sp been able to sp access sp {sl} our sp our life form that is sp to be able to travel to earth and land on it others might say it's just because sp there is a tic tac toe sp um {sl} maze in the cornfield sp and it's three dimensional sp and the aliens might have done it and so it's kind of hilarious from that point of view because they had {br} sp i don't know maybe had seen it from space sp uh sp really it's highly subjective in that sense but those are the two i can sp provide for you
+AS3,n4,q2,Q,M,what does the crop circle look like
+AS3,n4,q2,A,M,uh {sl} i mean {sl} i mean it really depends on which crop circle you're talking about but {sl} sp it could look like sp one could perhaps interpret it as like a sp black hole sort of thing it sp almost looks like that sp but sp then again {br} sp it sp the center sp like the it has to be full fully a sp black circle that is sp uh sp the uh corn sp the sp all of the circle filled with black sp and then it could perhaps represent maybe like a sp black hole or something like sp that sp at which point it's you know sp those aliens will be sucked in anyhow sp so {sl} sp but yeah i mean sp one could say it looks like a black hole judging from the basis of the uh sp uh angularity
+AS3,n4,q3,Q,M,where are the two green men from
+AS3,n4,q3,A,M,uh i could say i don't know like from another planet like you know the extraterrestrial sp like it's almost kind of like asking where is the extraterrestrial from sp and maybe we could say you know from another galaxy
+AS3,n4,q4,Q,E,and why is the man on the left sp pointing and sp smiling
+AS3,n4,q4,A,E,sp {br} sp he might have uh sp he might have tricked sp per se tricker the farmer sp who owns this land sp that he is actually gonna use his wheat sp to make sp alien bread that would sp help his uh sp race survive sp in sp the outside world however he might have just been sp you know {sl} sp a lying bastard and just uh sp decided to think that's a sp funny game to sp play tic tac toe instead and sp uh take advantage of the farmer sp and they're just you know {sl} behaving terribly towards him
+TD1,n4,q1,Q,E,why is this picture funny
+TD1,n4,q1,A,E,sp um i i guess it would be the idea that {sl} sp aliens are playing sp tic tac toe on our corn field {sl} in the same way that we play tic tac toe sp on sp {sl} a piece of paper they just think it's {sl} some temporary thing that'll probably grow back in sp a little bit and they have no idea sp {sl} what that {sl} stuff that's corn sp is even going to be used for sp or would have been used for {sl} sp but they're just playing a game
+TD1,n4,q2,Q,M,what does the crop circle look like 
+TD1,n4,q2,A,M,sp a tic tac toe board
+TD1,n4,q3,Q,M,where are the two green men from
+TD1,n4,q3,A,M,sp probably some other planet {sl} um sp i'd guess mars or {sl} i dunno sp some alien planet
+TD1,n4,q4,Q,E,and why is the man on the left sp pointing and smiling
+TD1,n4,q4,A,E,um sp i'm guessing that the person on the left is the one that sp did this sp {br} sp the person on the right is just sp an amused on looker who sp thinks this is very funny sp but the person on the left is kind of showing him hey sp look at what i've done
+TD2,n4,q1,Q,E,why is this picture funny
+TD2,n4,q1,A,E,sp um sp because sp it uh sp it's like sp it's like the crop circles that you see in in all those pictures sp but sp it's it's sp it's not all serious sp as people generally take crop circles it's just like aliens playing sp tic tac toe um sp and so sp it just kind of sp uh sp like sp like where some people think sp that crop circles could be like indication of an alien invasion sp they're just like literally having fun with it and playing sp tic tac toe in sp crops
+TD2,n4,q2,Q,M,[what] does the crop circle look like
+TD2,n4,q2,A,M,sp um a game of tic tac toe
+TD2,n4,q3,Q,M,[where] are the two green men from
+TD2,n4,q3,A,M,sp some far off planet sp um sp obviously not from earth sp uh sp but sp they're that's unknown
+TD2,n4,q4,Q,E,ok and why is the man on the left sp pointing and sp smiling
+TD2,n4,q4,A,E,probably pointing at uh humans and their their reaction sp maybe to to the crop circle sp um sp just cause it seems like they're probably just messing with sp with humans sp trying to get a uh sp reaction out of them
+TD3,n4,q1,Q,E,why is this picture funny
+TD3,n4,q1,A,E,um sp it's satire sp ha {sl} sp it's um sp making a joke about sp crop circles and sp it's just aliens just messing with people sp playing tic tac toe in the crops
+TD3,n4,q2,Q,M,what does the crop circle looks like
+TD3,n4,q2,A,M,a tic tac toe board sp x won
+TD3,n4,q3,Q,M,where are the two green men from
+TD3,n4,q3,A,M,not here
+TD3,n4,q4,Q,E,and why is the man on the left sp pointing and smiling
+TD3,n4,q4,A,E,because he finds what um sp what they did back sp there funny like oh they're gonna get a kick out of this sp those sp those humans
+AS2,n5,q1,Q,E,why is sp the woman the sp second from the right sp looking at the man
+AS2,n5,q1,A,E,hm {sl} uh i'm not sure {sl} yeah i don't know
+AS2,n5,q2,Q,M,what actions are taking place
+AS2,n5,q2,A,M,hm well it sp looks like sp the person on the sp far left is uh {sl} uh looks like they're sp pickpocketing the man {sl} hm but {sl} uh i'm sp not really sure what the man on sp the on the far right are sp supposed to be doing
+AS2,n5,q3,Q,E,what are the women doing
+AS2,n5,q3,A,E,hm {sl} sp yeah i don't sp i don't know
+AS2,n5,q4,Q,M,and what time period is this picture depicting
+AS2,n5,q4,A,M,hm {sl} i wanna sp say like {sl} like sp renaissance era
+AS3,n5,q1,Q,E,why is sp the woman the second from the right sp looking at the man
+AS3,n5,q1,A,E,i believe she is convinced that the man sp who is sp to her right sp might be having an affair with her
+AS3,n5,q2,Q,M,so what actions are taking place
+AS3,n5,q2,A,M,{sl} there is another girl sp on {sl} sp to the left who looks sp looks sp the one holding the man's waist sp the uh sp yeah sp the uh man with the brown hair his waist it looks as if sp she might be uh sp his girlfriend or whatnot sp or just you know sp just sp in a relationship sp although it wasn't really sp really too customary like that sp from you know what i'm assuming was back in perhaps say the fifteen hundreds
+AS3,n5,q3,Q,E,what are the women doing
+AS3,n5,q3,A,E,sp {sl} sp uh they're basically just trying to uh {sl} covet the man in sp all of his uh {sl} sp greatness and just trying to say that he is uh {sl} sp you sp know {sl} awesome by giving him you sp know sp royal sp gifts sp noble sp uh sp {sl} novelty items sp and perhaps the girl on sp second to the sp right sp of me is just sp envious sp or she's just thinking that this man is just as pretentious sp um sp bull bleeper sp who uh sp isn't really sp royal sp at all sp and just trying to {sl} bull bleep his way sp through all of this
+AS3,n5,q4,Q,M,sp and what time period is sp this picture depicting
+AS3,n5,q4,A,M,sp i'd say sixteenth century sp as i said earlier
+TD1,n5,q1,Q,E,why is the woman sp the second from the right
+TD1,n5,q1,A,E,sp looking at the man {sl} hm um sp it looks like sp both of the women on the right are judging the man on the left sp {sl} probably for {sl} something to do with sp the servant sp helping him to get dressed i'd assume {sl} sp um {sl} but sp it looks like he's doing some sp faux pas sp social ineptitude that sp he shouldn't be doing {sl} sp actually it could be because he's he's asking sp the sp woman on the far right for money sp {sl} or demanding money from her rather sp but sp i'm not sure hm
+TD1,n5,q2,Q,M,and what actions are taking place
+TD1,n5,q2,A,M,it looks like the servant on the far left is helping sp the man to get dressed sp and the man is sp demanding sp money from this sp {sl} sp old sp scared looking woman on the right {sl} sp um sp uh that's all that i can see
+TD1,n5,q3,Q,E,what are the women doing
+TD1,n5,q3,A,E,um {sl} the woman on the far right sp is giving the man money it looks like sp while the woman {sl} on the sp in the middle on the left i guess sp um sp looks like she would be the man's husband sp uh not husband wife or {sl} uh fiance or something along those lines and she's {sl} probably sp i don't sp know regretting the choices that she made
+TD1,n5,q4,Q,M,and what time period is this picture depicting uh
+TD1,n5,q4,A,M,probably {sl} around the renaissance era sp er {sl} yeah the renaissance era um maybe sometime before that i'm not really sure i'm sp not very good at timing or sp ok sp age and whatnot
+TD2,n5,q1,Q,E,why is the woman sp the sp second from the right sp looking at the man
+TD2,n5,q1,A,E,sp um i don't know sp i'm trying to uh sp trying to sp figure it out sp um sp looks to be that the other woman is giving him money sp um sp maybe they maybe sp i think sp the woman all the way to the right sp and the woman in the center sp um sp are related and maybe their family sp owes sp owes this man a debt sp um and so maybe sp she always sees this guy come around and try to get money sp um sp and sp and he sp she associates him with like uh sp um sp just with nervousness in general and i i think he she's nerv- she's nervous just that he's there sp she's sp she's keeping an eye on him cause she doesn't trust him
+TD2,n5,q2,Q,M,what actions are taking place
+TD2,n5,q2,A,M,sp um the old man is giving him sp money sp um sp {cg} sp and he is he sp is sp outstretching his hand sp um sp as if sp to be like sp requesting sp that money sp um {sl} sp let's see the woman to the left sp looks to be grabbing something {sl} sp on the man's pocket sp um sp i don't know what sp i don't know what sp that is i can't tell sp um sp the woman on the left seems to be sp grabbing {sl} sp um sp some sort sp of rope drip- uh sp uh dangling down from this guy's uh sp belt around his around his uh stomach sp um {ls} that's all i can see
+TD2,n5,q3,Q,E,what are the women doing
+TD2,n5,q3,A,E,um {sl} what are the woman doing sp i don't sp um sp apart from the woman on the right it sp seems like they're not sp doing much of anything i i sp can't maybe maybe they're stealing something from him maybe they're pickpocketing him sp like sp i don't sp i don't think so but that's sp kind of what it looks like sp um sp but i don't know i don't know how the woman in the center would be sp pickpocketing anything if she's just literally grabbing sp the string from his clothing sp but i don't i don't see any reason why she'd be grabbing that sp um sp but it does look like the woman on the left is sp trying to pickpocket something from him
+TD2,n5,q4,Q,M,[what] time period is this picture depicting
+TD2,n5,q4,A,M,sp um sp i sp i think sp the uh victorian era sp so like shakespeare sp around there
+TD3,n5,q1,Q,E,why is the woman the second from the right sp looking at the man
+TD3,n5,q1,A,E,um {sl} not sure {sl} maybe um sp maybe she's wary of what's going on from sp the looks of things he's sp kind of wary too {sl} they're both looking sp at each other the same look
+TD3,n5,q2,Q,M,what actions are taking place
+TD3,n5,q2,A,M,hm {sl} uh the sp uh the woman on the sp um all the way on the right seems to be giving him something sp while the um sp the woman on the left seems to be pickpocketing the man
+TD3,n5,q3,Q,E,uh what are the women doing
+TD3,n5,q3,A,E,doing a bait and switch {sl} um sp one is {sl} um sp one is getting sp his attention by sp completing a transaction while the other one um sp steals his stuff from his pocket
+TD3,n5,q4,Q,M,and what time period is this picture depicting
+TD3,n5,q4,A,M,not now {lg} i mean uh i don't i'm not sure specifically sp not in the last sp three or four centuries sp ok {sl} ok sp that's sp probably off though {lg}
+AS2,n6,q1,Q,M,so where is this taking place
+AS2,n6,q1,A,M,um {sl} just like an sp office building like sp where the man works
+AS2,n6,q2,Q,E,and how does this person feel
+AS2,n6,q2,A,E,uh very angry
+AS2,n6,q3,Q,E,and what has just happened
+AS2,n6,q3,A,E,uh the computer's sp like having some kind of like {sl} some kind of error {sl} uh i think {sl} probably like sp like an sp like sp an ongoing sp problem
+AS2,n6,q4,Q,M,and what color is his tie
+AS2,n6,q4,A,M,red
+AS3,n6,q1,Q,M,where is sp this taking place
+AS3,n6,q1,A,M,sp uh i'm gonna think that it's probably in sp like a computer auction- auctionary store sp auction store or just sp an office although the latter doesn't seem as sp uh sp reasonable to sp reason out because there is no cubicle sp so i'd probably say maybe you know like sp um sp like circuit city or uh someplace that really just sells sp computer components sp or a computer auction
+AS3,n6,q2,Q,E,how does this person feel
+AS3,n6,q2,A,E,sp {br} sp he's probably upset that sp there are some defective products that are trying to be either sold or auctioned out sp and he's saying no no no this is no good we cannot give products like this to sp consumers otherwise they're gonna probably {sl} you know like uh trash us on a site like yelp sp and at which point their sp business sp can go down the drain sp just like that sp because sp yelp does tend to do that
+AS3,n6,q3,Q,E,what has sp just happened
+AS3,n6,q3,A,E,sp uh i'm gonna think that {sl} sp uh {sl} perhaps there was uh {sl} there may have been sp uh sp glitch in the {sl} sp program he was writing or sp or something to get a the monitor to work sp or he may have sp been um {sl} sp um sp debugging a program judging by the papers he has sp and sp at which point he's probably just getting ready to sp smash a monitor even though sp in his store it's you know he may not even have purchased the actual computer itself sp but he's just somehow inclined to sp program sp you know sp because it's sort of his hobby and he's like sp oh my god sp this doesn't sp bleeping work so i'm going to destroy this whole bleeping sp bleep
+AS3,n6,q4,Q,M,and what color is his tie
+AS3,n6,q4,A,M,red with uh some maroon and gold stripes
+TD1,n6,q1,Q,M,[where] is this taking place
+TD1,n6,q1,A,M,sp um sp looks like either an office or a lab sp of some kind probably an office though
+TD1,n6,q2,Q,E,[how] does this person feel
+TD1,n6,q2,A,E,sp um sp they're sp very angry with the computer
+TD1,n6,q3,Q,E,what has just happened
+TD1,n6,q3,A,E,um {sl} based on all of the sp strewn about paperwork on the desk it sp looks like they might've sp either been quit or been fired sp er not sp been quit sp just quit or been fired sp and now they're taking out their anger on their sp computer or their desk or sp anything that they can find
+TD1,n6,q4,Q,M,and what color is his tie
+TD1,n6,q4,A,M,sp uh it's mostly red sp with some yellow and sp dark red stripes
+TD2,n6,q1,Q,M,[where] is this taking place
+TD2,n6,q1,A,M,sp uh in an office building
+TD2,n6,q2,Q,E,[how] does this person feel
+TD2,n6,q2,A,E,sp uh he's really frustrated sp um whether sp that be at his sp work in general or maybe just his computer maybe he's having technical problems um sp or maybe he's just fed up with sp with his job in general sp it's hard to tell but he's definitely angry at something
+TD2,n6,q3,Q,E,what has just happened
+TD2,n6,q3,A,E,um sp he's he's probably seeing something on his screen that he doesn't like sp um sp whether that be sp uh an sp indication that his computer's not working properly sp or that sp he sp maybe he got bad news maybe he didn't he didn't get a promotion sp um sp that he was hoping to get sp uh sp or maybe he was fired um sp but sp either either there's something sp literally wrong with his computer or there's something sp on his screen that he just got note of that he associates sp his job in general sp with this computer screen sp and so he wants to smash it
+TD2,n6,q4,Q,M,and what color is his sp tie
+TD2,n6,q4,A,M,um it's red with uh sp with sp white diagonal stripes
+TD3,n6,q1,Q,M,where is this taking place
+TD3,n6,q1,A,M,in an office sp business environment
+TD3,n6,q2,Q,E,and how does this person feel
+TD3,n6,q2,A,E,not happy sp ready to sp destroy his monitor
+TD3,n6,q3,Q,E,and what has just happened
+TD3,n6,q3,A,E,doesn't look like a computer issue sp because he has a notebook there and a bunch of papers around it {sl} maybe he's he was working on something and he can't figure out {sl} what he wanted to um {sl} what he wanted to write sp and he's just taking out his frustration on his computer
+TD3,n6,q4,Q,M,what color is his tie
+TD3,n6,q4,A,M,sp red sp with sp white stripes
+AS2,n8,q1,Q,M,where are they
+AS2,n8,q1,A,M,uh an arcade
+AS2,n8,q2,Q,E,and what is their relationship
+AS2,n8,q2,A,E,mm {sl} like {sl} boyfriend girlfriend husband wife {sl} e- either* of* those*
+AS2,n8,q3,Q,M,what* kind* of* game* are* they* playing*
+AS2,n8,q3,A,M,uh sp a sp racing game
+AS2,n8,q4,Q,E,and how often do they play video games
+AS2,n8,q4,A,E,mm {sl} not not super often {sl} like {sl} i don't like i don't sp i don't think {sl} they don't seem like sp they'd be {sl} what sp people consider sp gamers
+AS3,n8,q1,Q,M,[where] are they
+AS3,n8,q1,A,M,sp in an arcade
+AS3,n8,q2,Q,E,and what is their relationship
+AS3,n8,q2,A,E,sp most likely it is boyfriend and girlfriend although it could be the stage before that in which they are trying to sp wean their way towards sp uh sp having such a relationship or it could just be you know sp two fiances sp preparing to get married within sp you know sp five weeks or sp five months and such
+AS3,n8,q3,Q,M,and what kind of sp game sp what kind of game are they playing
+AS3,n8,q3,A,M,sp a racing game like sp the ones i know sp although this looks nothing like it need for speed but this is probably sp another version developed sp by another sp uh company sp uh sp and um {sl} sp yeah one of those old school uh {sl} sp late eighties early nineties uh uh sp car game models sp um using an sp actual machine to play the game sp even though nowadays it's just you know sp like your sp xbox or wii or sp whatever
+AS3,n8,q4,Q,E,and how often do they play video games
+AS3,n8,q4,A,E,sp i can probably it's safe to say that they probably {sl} sp i'm sp i'm not gonna assume that they have an sp addiction but at the same time i'm not going to say that they play it sparingly sp so i'm sp gonna say that they probably you know sp uh sp play maybe like uh {sl} sp like sp five times a week {sl} ok {sl} not necessarily in an arcade by sp the way sp oh ok sp yeah
+TD1,n8,q1,Q,M,where are they
+TD1,n8,q1,A,M,sp um sp at sp an arcade of some sort maybe a dave and busters or sp um sp probably an arcade
+TD1,n8,q2,Q,E,what is their relationship
+TD1,n8,q2,A,E,sp um sp looks like they're probably dating sp er {sl} actually they sp they're probably married based on the wedding rings
+TD1,n8,q3,Q,M,what kind of game are they playing
+TD1,n8,q3,A,M,sp um sp it looks like a racing game yeah sp it's sp definitely a racing game sp she's got her hands on a uh sp steering wheel and {sl} there's a car on the screen
+TD1,n8,q4,Q,E,and how often do they play video games
+TD1,n8,q4,A,E,sp um {sl} {ls} sp {sl} probably not too often but {sl} not sp so rarely that they've never played video games sp just sp not often enough that they'd sp sp be able to find it sp this entertaining every time that they do play video games
+TD2,n8,q1,Q,M,[where] are they
+TD2,n8,q1,A,M,sp uh they're in some type of arcade
+TD2,n8,q2,Q,E,and what is their relationship
+TD2,n8,q2,A,E,sp um sp they could be sp they could be brother and sister they could be on a date sp um whether whether they've been in a relationship for a long time or it's it's like a first or second date um sp they could be sp friends sp um it it seems like sp it seems like they're really comfortable with each other um sp so it seems like they've known each other for a while so i'd say either they're sp they're good friends um brother and sister or sp or sp have been in a relationship for a while
+TD2,n8,q3,Q,M,[what] kind of game are they playing
+TD2,n8,q3,A,M,sp um a driving game sp a racing game probably
+TD2,n8,q4,Q,E,how often do they play video games
+TD2,n8,q4,A,E,sp um my guess is sp not very often um because the excitement that they're showing sp my guess wouldn't wouldn't really show up sp if if they sp if they played video games a lot you know you kinda get desensitized to it but sp they seem like pretty excited about what's going on so like my sp my guess is they're they're sp it's it's a somewhat somewhat new experience i mean obviously they've sp they've played video games before but sp they're not they're not that used to it
+TD3,n8,q1,Q,M,where are they
+TD3,n8,q1,A,M,by the looks of things at a dave and buster's but if we're going to be more general at at some sort of arcade
+TD3,n8,q2,Q,E,and what is their relationship
+TD3,n8,q2,A,E,they seem pretty close probably married look judging by the rings
+TD3,n8,q3,Q,M,what kind of sp game are they playing sp playing
+TD3,n8,q3,A,M,a racing game
+TD3,n8,q4,Q,E,and how often do they play video games
+TD3,n8,q4,A,E,i don't know if you can extrapolate that from the picture
+AS2,n9,q1,Q,E,why is the dog looking at the boy
+AS2,n9,q1,A,E,hm {sl} mm i mean {sl} i mean i'm sure sp the dog belongs to the boy but i mean {sl} mm i'm not sure if there's really sp like sp a specific sp reason {sl} why it's sp uh sp looking at him
+AS2,n9,q2,Q,E,and what have the boy and dog been doing before this moment
+AS2,n9,q2,A,E,ha {sl} i don't know
+AS2,n9,q3,Q,M,how much does the dog weigh
+AS2,n9,q3,A,M,mm i'd sp say around like sp twenty pounds
+AS2,n9,q4,Q,M,and how old is the boy
+AS2,n9,q4,A,M,mm {sl} i think {sl} i'm thinking like sp twelve or thirteen
+AS3,n9,q1,Q,E,why is sp the dog sp looking at sp the boy
+AS3,n9,q1,A,E,sp because sp he or she is sensing that the boy is sp depressed about maybe sp maybe sp a lover that he sp sp had his heart towards but she just decided to dump him immediately sp or another situation in which the boy is depressed
+AS3,n9,q2,Q,E,what have the boy and dog been doing before this sp moment
+AS3,n9,q2,A,E,sp they might have been uh sp i mean it could be like you know sp days past before they have been you know uh having walks sp they might have been playing a game of fetch in which the dog has to you know sp fetch a ball and whatnot you know sp uh sp typical stuff like sp that
+AS3,n9,q3,Q,M,how much does sp the dog weigh sp
+AS3,n9,q3,A,M,i'll probably guess like uh {sl} in standard u s units seventy two pounds
+AS3,n9,q4,Q,M,great and how old is sp the boy
+AS3,n9,q4,A,M,sp he's probably like fourteen or fifteen you know just sp um sp late middle school early high school sp age
+TD1,n9,q1,Q,E,[why] is the dog looking at the boy
+TD1,n9,q1,A,E,sp um sp probably because the boy looks sad sp and the i sp mean the dog either sp wants to cheer up the boy or wants to figure out why the boy is sad
+TD1,n9,q2,Q,E,what have the boy and dog been doing before this sp moment
+TD1,n9,q2,A,E,um sp probably playing in the streets i'd guess based on the sp boy's appearance
+TD1,n9,q3,Q,M,how much does the dog weigh
+TD1,n9,q3,A,M,maybe sp fifteen to twenty pounds i'd guess sp not too heavy
+TD1,n9,q4,Q,M,and how old is the boy
+TD1,n9,q4,A,M,probably sp eleven to twelve years old maybe ten sp young very young
+TD2,n9,q1,Q,E,[why] is sp the dog looking at the boy
+TD2,n9,q1,A,E,sp um you can tell the boy sp seems like the boy is deep in thought either that i can't tell if he's actually looking at the dog sp or but my first sp my sp my first thought is that the boy is deep in thought just kind of staring off into space and the dog is is uh sp is kind of sp curious about about what's going on with this sp with this boy
+TD2,n9,q2,Q,E,what have the boy and dog been doing before this sp moment
+TD2,n9,q2,A,E,sp um sp looks like the boy is holding something in his hand maybe it's a uh {sl} sp leash sp oh which makes me believe that maybe sp he's expected to be sp fed after that maybe sp so maybe he's the dog's actually looking at the boy because he's about to be fed sp i could see that sp um sp i sp i don't sp i don't i don't see any other reason why he'd be holding sp a a uh rope sp so i think it's probably a leash sp i think sp they probably just went for a walk sp or either that or they're about to go for a walk and that's why the dog's looking at the boy
+TD2,n9,q3,Q,M,how much does the dog weigh
+TD2,n9,q3,A,M,sp um mm sp thirty forty sp thirty or forty pounds
+TD2,n9,q4,Q,M,how old is the boy
+TD2,n9,q4,A,M,sp uh he looks to be right around um sp starting of adolescence so probably sp twelve or thirteen
+TD3,n9,q1,Q,E,[why] is the dog looking at the boy
+TD3,n9,q1,A,E,sp because the boy's looking at the dog
+TD3,n9,q2,Q,E,and what have the boy and dog been doing before this sp moment
+TD3,n9,q2,A,E,not sure i'd sp like to skip the question
+TD3,n9,q3,Q,M,how much does the dog weigh {sl} what sp {lg} sp um sp
+TD3,n9,q3,A,M,i'd like to skip that one as well sp ok sp not sure
+TD3,n9,q4,Q,M,and how old is the boy
+TD3,n9,q4,A,M,looks to be about sp twelve
+AS2,n10,q1,Q,M,what are they dropping off the ledge
+AS2,n10,q1,A,M,i have no idea
+AS2,n10,q2,Q,E,how do the people feel {sl} sp mm
+AS2,n10,q2,A,E,maybe surprised i mean {sl} kinda hard to tell they don't have faces
+AS2,n10,q3,Q,E,why would the people be sp surprised
+AS2,n10,q3,A,E,um i mean they {sl} just {sl} not expecting to see sp that sp thing falling down sp uh whatever it is
+AS2,n10,q4,Q,M,and is it realistic for an egg to hatch while dropping
+AS2,n10,q4,A,M,mm {sl} i wouldn't think so
+AS3,n10,q1,Q,M,what are they dropping off the ledge
+AS3,n10,q1,A,M,sp uh it looks as if they are uh {sl} birdhouses sp hm sp or bird catchers sp you know similar to um uh {sl} sp i mean one could interpret it one other way birdhouses because crack sp you know the bird might have stepped in a sp wooden base or a bird catcher because similar to like a mosquito sp a sp mosquito catcher that crack sp that sp crack uh sp onomatopoeia might imply that the bird might have been sp fried or sp cooked or whatever sp something like that
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,

@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Sep 24 22:40:23 2014
-
 @author: Douglas
 """
 
@@ -25,9 +23,9 @@ def buildVocab(data):
     return set(vocab)
 
 
-def loadFiles():
+def loadFile(fileName):
     firstFile = ""
-    with open("data.csv", 'r') as cFile:
+    with open(fileName, 'r') as cFile:
         firstFile = cFile.read()
 
     firstFile = firstFile.split('\n')
@@ -88,37 +86,80 @@ def splitData(data):
 def getSVMFeatures(data):
     data = []
 
+def EnsemblePredicition(DTclassifier, NBclassifier, svmClassifier, textRow, svmData):
+
+    svmData.append(textRow[0])
+    vec = DictVectorizer()
+    svmDataVectorized = vec.fit_transform(svmData).toarray()
+
+    dtAns = DTclassifier.classify(textRow[0])
+    nbAns = NBclassifier.classify(textRow[0])
+    svmAns = svmClassifier.predict(svmDataVectorized[-1])
+
+    ans0 = 0
+    ans1 = 0
+
+    if nbAns == 'A' or nbAns == 'E':
+        ans0 += 1
+    else:
+        ans1 += 1
+
+    if dtAns == 'A' or dtAns == 'E':
+        ans0 += 1
+    else:
+        ans1 += 1
+
+    if svmAns == 0:
+        ans0 += 1
+    else:
+        ans1 += 1
+
+    if ans0 > ans1:
+        return 0
+    else:
+        return 1
+
+
+def classifyUsingEnsemble(dtClass, nbClass, svmClass, testSet, svmData):
+    print "classifying " + str(len(testSet)) + " points"
+    return [EnsemblePredicition(dtClass, nbClass, svmClass, row, svmData) for row in testSet]
+
 def main():
     
-    """
     if len(sys.argv) < 3:
         print "train file as first argument, test file as second"
         sys.exit()
-    fileName = sys.argv[1]
-    """
+    trainFileName = sys.argv[1]
+    testFileName = sys.argv[2]
 
-    data = loadFiles()
+    data = loadFile(trainFileName)
+    testData = loadFile(testFileName)
+
     vocab = buildVocab(data)
 
     vocab = [fixWord(word) for word in vocab]
 
     data = [r for r in data if len(r) > 1]
+    testData = [r for r in testData if len(r) > 1]
 
     random.shuffle(data)
 
-    labeledData = [(getEMFeatures(vocab, row[5]), row[4]) for row in data]
-
-    trainset, testset = splitData(labeledData)
+    labeledEMData = [(getEMFeatures(vocab, row[5]), row[4]) for row in data]
+    testData = [(getEMFeatures(vocab, row[5]), row[4]) for row in testData]
     
-    classifier = nltk.NaiveBayesClassifier.train(trainset)
+    NBclassifier = nltk.NaiveBayesClassifier.train(labeledEMData)
+    DTclassifier = nltk.DecisionTreeClassifier.train(labeledEMData)
 
-    svmData = [getEMFeatures(vocab, row[5]) for row in data]
-    svmAnswers = [row[4] for row in data]
+    allData = labeledEMData + testData
+
+    svmData = [row[0] for row in allData]
+    svmAnswers = [row[1] for row in allData]
 
     svmClass = svm.SVC(kernel = 'rbf', gamma=0.0005, C = 600)
 
     vec = DictVectorizer()
-    svmData = vec.fit_transform(svmData).toarray()
+
+    svmDataVectored = vec.fit_transform(svmData).toarray()
 
     svmArrayAnswers = []
     for i in svmAnswers:
@@ -127,24 +168,45 @@ def main():
         else:
             svmArrayAnswers.append(1)
 
-    svmTrainData = svmData[:330]
-    svmTrainAnswers = svmArrayAnswers[:330]
-    svmTestData = svmData[330:]
-    svmTestAnswers = svmArrayAnswers[330:]
+    svmClass.fit(svmDataVectored[0:len(labeledEMData)], svmArrayAnswers[0:len(labeledEMData)])
 
-    svmClass.fit(svmTrainData, svmTrainAnswers)
+    trainCorrectAnswers = []
+    for i in labeledEMData:
+        if i[1] == 'A' or i[1] == 'E':
+            trainCorrectAnswers.append(0)
+        else:
+            trainCorrectAnswers.append(1)
 
-    trainPredict = svmClass.predict(svmTrainData)
-    svmTrainAccuracy = np.mean(trainPredict == svmTrainAnswers)
+    testCorrectAnswers = []
+    for i in testData:
+        if i[1] == 'A' or i[1] == 'E':
+            testCorrectAnswers.append(0)
+        else:
+            testCorrectAnswers.append(1)
+     
+    """ensembleTrainPredicted = classifyUsingEnsemble(DTclassifier, NBclassifier, svmClass, labeledEMData, svmData)
+    
 
-    predicted = svmClass.predict(svmTestData)
-    svmAccuracy = np.mean(predicted == svmTestAnswers)
+    ensembleTrainCorrect = 0
+    
 
-    print "SVM Train accuracy: " + str(svmTrainAccuracy)
-    print "SVM Test accuracy: " + str(svmAccuracy)
+    for i in range(len(ensembleTrainPredicted)):
+        if ensembleTrainPredicted[i] == trainCorrectAnswers[i]:
+            ensembleTrainCorrect += 1
 
-    print "NB Train accuracy: " + str(nltk.classify.accuracy(classifier, trainset))
-    print "NB Test accuracy: " + str(nltk.classify.accuracy(classifier, testset))
+    
+    print "Train accuracy: " + str(ensembleTrainCorrect / float(len(ensembleTrainPredicted)))"""
+
+    ensembleTestPredicted = classifyUsingEnsemble(DTclassifier, NBclassifier, svmClass, testData, svmData)
+
+    ensembleTestCorrect = 0
+
+    for i in range(len(ensembleTestPredicted)):
+        if ensembleTestPredicted[i] == testCorrectAnswers[i]:
+            ensembleTestCorrect += 1
+
+    print "Test accurcy: " + str(ensembleTestCorrect / float(len(ensembleTestPredicted)))
+
 
     
 if __name__ == "__main__":
