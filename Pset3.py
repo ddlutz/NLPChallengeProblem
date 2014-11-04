@@ -74,55 +74,24 @@ def getEMFeatures(vocab, textRow):
     features['NumWords'] = len([w for w in textRow if w not in ['sp','{sl}']])
 
     return features
-        
-def splitData(data):
 
-    numTrain = int(len(data) * 0.8)
 
-    random.shuffle(data)
+def predictWithTest(svmClassifier, svmData, row, zeroLabel, oneLabel, text):
+    print "Predicting " + str(text[5])
 
-    return (data[:numTrain], data[numTrain:])
-
-def getSVMFeatures(data):
-    data = []
-
-def EnsemblePredicition(DTclassifier, NBclassifier, svmClassifier, textRow, svmData):
-
-    svmData.append(textRow[0])
+    svmData.append(row[0])
     vec = DictVectorizer()
     svmDataVectorized = vec.fit_transform(svmData).toarray()
 
-    dtAns = DTclassifier.classify(textRow[0])
-    nbAns = NBclassifier.classify(textRow[0])
     svmAns = svmClassifier.predict(svmDataVectorized[-1])
 
-    ans0 = 0
-    ans1 = 0
-
-    if nbAns == 'A' or nbAns == 'E':
-        ans0 += 1
-    else:
-        ans1 += 1
-
-    if dtAns == 'A' or dtAns == 'E':
-        ans0 += 1
-    else:
-        ans1 += 1
-
     if svmAns == 0:
-        ans0 += 1
+        print "Classified as " + zeroLabel
     else:
-        ans1 += 1
+        print "Classified as " + oneLabel
 
-    if ans0 > ans1:
-        return 0
-    else:
-        return 1
+    return svmAns
 
-
-def classifyUsingEnsemble(dtClass, nbClass, svmClass, testSet, svmData):
-    print "classifying " + str(len(testSet)) + " points"
-    return [EnsemblePredicition(dtClass, nbClass, svmClass, row, svmData) for row in testSet]
 
 def main():
     
@@ -140,73 +109,89 @@ def main():
     vocab = [fixWord(word) for word in vocab]
 
     data = [r for r in data if len(r) > 1]
-    testData = [r for r in testData if len(r) > 1]
+    testDataText = [r for r in testData if len(r) > 1]
 
     random.shuffle(data)
 
     labeledEMData = [(getEMFeatures(vocab, row[5]), row[4]) for row in data]
-    testData = [(getEMFeatures(vocab, row[5]), row[4]) for row in testData]
-    
-    NBclassifier = nltk.NaiveBayesClassifier.train(labeledEMData)
-    DTclassifier = nltk.DecisionTreeClassifier.train(labeledEMData)
+    testEMData = [(getEMFeatures(vocab, row[5]), row[4]) for row in testDataText]
 
-    allData = labeledEMData + testData
+    labeledQAData = [(getEMFeatures(vocab, row[5]), row[3]) for row in data]
+    testQAData = [(getEMFeatures(vocab, row[5]), row[3]) for row in testDataText]
 
-    svmData = [row[0] for row in allData]
-    svmAnswers = [row[1] for row in allData]
+    allEMData = labeledEMData + testEMData
+    allQAData = labeledQAData + testQAData
 
-    svmClass = svm.SVC(kernel = 'rbf', gamma=0.0005, C = 600)
+    svmEMData = [row[0] for row in allEMData]
+    svmEMAnswers = [row[1] for row in allEMData]
+
+    svmQAData = [row[0] for row in allQAData]
+    svmQAAnswers = [row[1] for row in allQAData]
+
+    svmEMClass = svm.SVC(kernel = 'rbf', gamma=0.0005, C = 600)
+    svmQAClass = svm.SVC(kernel = 'rbf', gamma=0.0005, C = 600)
+
+
 
     vec = DictVectorizer()
 
-    svmDataVectored = vec.fit_transform(svmData).toarray()
+    svmDataVectored = vec.fit_transform(svmEMData).toarray()
 
-    svmArrayAnswers = []
-    for i in svmAnswers:
+    svmEMArrayAnswers = []
+    for i in svmEMAnswers:
         if i == 'A' or i == 'E':
-            svmArrayAnswers.append(0)
+            svmEMArrayAnswers.append(0)
         else:
-            svmArrayAnswers.append(1)
+            svmEMArrayAnswers.append(1)
 
-    svmClass.fit(svmDataVectored[0:len(labeledEMData)], svmArrayAnswers[0:len(labeledEMData)])
+    svmQAArrayAnswers = []
+    for i in svmQAAnswers:
+        if i == 'A' or i == 'E':
+            svmQAArrayAnswers.append(0)
+        else:
+            svmQAArrayAnswers.append(1)
 
-    trainCorrectAnswers = []
-    for i in labeledEMData:
+    """Train only on test data :)"""
+
+    svmEMClass.fit(svmDataVectored[0:len(labeledEMData)], svmEMArrayAnswers[0:len(labeledEMData)])
+
+    svmQAClass.fit(svmDataVectored[0:len(labeledQAData)], svmQAArrayAnswers[0:len(labeledQAData)])
+
+    testEMCorrectAnswers = []
+    for i in testEMData:
         if i[1] == 'A' or i[1] == 'E':
-            trainCorrectAnswers.append(0)
+            testEMCorrectAnswers.append(0)
         else:
-            trainCorrectAnswers.append(1)
+            testEMCorrectAnswers.append(1)
 
-    testCorrectAnswers = []
-    for i in testData:
+    testQACorrectAnswers = []
+    for i in testQAData:
         if i[1] == 'A' or i[1] == 'E':
-            testCorrectAnswers.append(0)
+            testQACorrectAnswers.append(0)
         else:
-            testCorrectAnswers.append(1)
-     
-    """ensembleTrainPredicted = classifyUsingEnsemble(DTclassifier, NBclassifier, svmClass, labeledEMData, svmData)
-    
+            testQACorrectAnswers.append(1)        
 
-    ensembleTrainCorrect = 0
-    
+    EMpredictions = []
+    for row in range(len(testEMData)):
+        EMpredictions.append(predictWithTest(svmEMClass, svmEMData, testEMData[row], 'E', 'M', testDataText[row] ))
 
-    for i in range(len(ensembleTrainPredicted)):
-        if ensembleTrainPredicted[i] == trainCorrectAnswers[i]:
-            ensembleTrainCorrect += 1
+    EMpredictedCorrectly = 0
+    for i in range(len(EMpredictions)):
+        if EMpredictions[i] == testEMCorrectAnswers[i]:
+            EMpredictedCorrectly += 1
 
-    
-    print "Train accuracy: " + str(ensembleTrainCorrect / float(len(ensembleTrainPredicted)))"""
+    QApredictions = []
+    for row in range(len(testQAData)):
+        QApredictions.append(predictWithTest(svmQAClass, svmQAData, testQAData[row], 'A', 'Q', testDataText[row] ))
 
-    ensembleTestPredicted = classifyUsingEnsemble(DTclassifier, NBclassifier, svmClass, testData, svmData)
+    QApredictedCorrectly = 0
+    for i in range(len(QApredictions)):
+        if QApredictions[i] == testQACorrectAnswers[i]:
+            QApredictedCorrectly += 1
 
-    ensembleTestCorrect = 0
+    print "E/M Average w/ SVM: " + str(EMpredictedCorrectly / float(len(testData)))
 
-    for i in range(len(ensembleTestPredicted)):
-        if ensembleTestPredicted[i] == testCorrectAnswers[i]:
-            ensembleTestCorrect += 1
-
-    print "Test accurcy: " + str(ensembleTestCorrect / float(len(ensembleTestPredicted)))
-
+    print "Q/A Average w/ SVM: " + str(QApredictedCorrectly / float(len(testData)))
 
     
 if __name__ == "__main__":
